@@ -49,4 +49,4 @@ function changeDot (arr) {
 
 6. Completed an internship at the Celadon company. Worked with react-native, git, jira, slack. I used the Scrum methodology in my work.
 7. I have not higher technical education. I read "HTML and CSS" by Jon Duckett. I completed HTML Academy courses (HTML, CSS), [JavaScript](code-basics.com), [learn.javascript.ru](https://learn.javascript.ru/), train on kata in the [codewars](https://www.codewars.com/users/SudakovMaksim).
-8. I learnt English at streamline courses, B1 lvl. [link to my certificate](https://str.by/streamline-certificate/90A0FACCEFD2528E4702F4F48FFBC405) I practiced my English skills during my trips (Poland, Czhech Republic, Bulary, Rumania).
+8. I learnt English at streamline courses, B1 lvl [link to my certificate](https://str.by/streamline-certificate/90A0FACCEFD2528E4702F4F48FFBC405). I practiced my English skills during my trips (Poland, Czhech Republic, Bulary, Rumania).

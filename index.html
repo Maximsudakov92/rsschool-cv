@@ -3,10 +3,30 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/github-dark-dimmed.min.css">
+    <link rel="stylesheet" href="libs/burger/hamburgers.min.css">
+    <meta name="viewport" content="width=device-width">
     <title>Maksim Sudakov</title>
   </head>
   <body>
+    <div class="wrapper">
     <header class="header">
+      <nav class="nav">
+        <button class="hamburger hamburger--vortex" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <ul>
+          <li class="nav-item"><a data-goto=".profile" href="#" class="nav-link">profile</a></li>
+          <li class="nav-item"><a data-goto=".skills" href="#" class="nav-link">skills</a></li>
+          <li class="nav-item"><a data-goto=".experience" href="#" class="nav-link">experience</a></li>
+          <li class="nav-item"><a data-goto=".education" href="#" class="nav-link">education</a></li>
+          <li class="nav-item" ><a data-goto=".code" href="#" class="nav-link">code</a></li>
+          <li class="nav-item"><a data-goto=".projects" href="#" class="nav-link">projects</a></li>
+          <li class="nav-item"><a data-goto=".contactInfo" href="#" class="nav-link">contacts</a></li>
+        </ul>  
+      </nav>
       <figure class="logo">
         <img src="images/Logo.jpg" alt="logo">
       </figure>
@@ -43,6 +63,7 @@
         <h2>Experience</h2>
         <ul>
           <li>Internship at Celadon company: 1 month</li>
+          <li><a href="https://app.rs.school/certificate/kel5em6k">RSschool «JavaScript/Front-end. Stage 0»</a></li>
         </ul>
       </section>
 
@@ -62,6 +83,54 @@
             <a href="https://www.codewars.com/users/Maximsudakov92">https://www.codewars.com/users/Maximsudakov92</a>
           </li>
         </ul>
+        <pre>
+          <code class="language-javascript hljs">
+            function checkObj(a, b) {
+              let count1 = 0;
+              let count2 = 0;
+            
+              for (let key in a) {
+                let value = a[key];
+                count1++;
+              };
+              for (let key in b) {
+                let value = b[key];
+                count2++;
+              };
+              if (count1 === count2) {
+                for(let key in a) {
+                  if (typeof a[key] === 'object') {
+                    if (checkObj(a[key], b[key]) !== true){
+                      return false;
+                    } 
+                  } else {
+                    if (a[key] !== b[key]) {
+                      return false;
+                    }
+                  }    
+                }
+                return true;
+              } else {
+                  return false;
+              }
+            };
+            console.log(checkObj(a,b));
+          </code>
+        </pre>
+      </section>
+
+      <section class="projects">
+        <h2>Projects</h2>
+        <article class="projects_item" id="projects_item">
+          <a class="museum_link" href="https://rolling-scopes-school.github.io/maximsudakov92-JSFEPRESCHOOL/museum/" target="_blank">
+            <img src="images/museum_item.png" alt="museum">
+          </a>
+          <div class="project_info" onclick="location.href='//rolling-scopes-school.github.io/maximsudakov92-JSFEPRESCHOOL/museum/' ;">
+            <h3>Museum Louvre</h3>
+            <p>Landing page for museum Louvre</p>
+            <p class='lang'>html, css, js</p>
+          </div>
+        </article>
       </section>
 
       <section class="contactInfo">
@@ -88,5 +157,13 @@
       </figure>
       <span>2021</span>
     </footer>
+    </div>
+    <script>
+      console.log('Оценка задания 150 баллов: валидная верстка +10, верстка семантическая + 20, используются стили css + 10, контент в блоке по центру + 10, адаптивная верстка +10, фото с пропорциями и alt + 10, контакты и навыки в виде списка + 10, сv содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского +10, пример вашего кода + 10, сv на английском языке + 10, выполнены требования к Pull Request + 10,')
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="hamburger.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -188,6 +188,7 @@ section {
     transition: left .3s ease 0s;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
   }
 
   p {

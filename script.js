@@ -30,3 +30,8 @@ if(isMobile.any()) {
 } else {
   document.body.classList.add('_pc');
 }
+
+const projectInfo = document.querySelector('.project_info');
+projectInfo.addEventListener('click', function() {
+  window.open('//rolling-scopes-school.github.io/maximsudakov92-JSFEPRESCHOOL/museum/','_blank')
+})
